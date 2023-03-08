@@ -3,19 +3,19 @@
 
 The following requirements are needed by this module:
 
-- [[requirement_helm]] <<requirement_helm,helm>> (~> 2)
+- [[requirement_helm]] <<requirement_helm,helm>> (>= 2)
 
-- [[requirement_kubernetes]] <<requirement_kubernetes,kubernetes>> (~> 2)
+- [[requirement_kubernetes]] <<requirement_kubernetes,kubernetes>> (>= 2)
 
-- [[requirement_utils]] <<requirement_utils,utils>> (~> 1)
+- [[requirement_utils]] <<requirement_utils,utils>> (>= 1)
 
 === Providers
 
 The following providers are used by this module:
 
-- [[provider_helm]] <<provider_helm,helm>> (~> 2)
+- [[provider_helm]] <<provider_helm,helm>> (>= 2)
 
-- [[provider_utils]] <<provider_utils,utils>> (~> 1)
+- [[provider_utils]] <<provider_utils,utils>> (>= 1)
 
 === Modules
 
@@ -75,9 +75,9 @@ No outputs.
 [cols="a,a",options="header,autowidth"]
 |===
 |Name |Version
-|[[requirement_helm]] <<requirement_helm,helm>> |~> 2
-|[[requirement_kubernetes]] <<requirement_kubernetes,kubernetes>> |~> 2
-|[[requirement_utils]] <<requirement_utils,utils>> |~> 1
+|[[requirement_helm]] <<requirement_helm,helm>> |>= 2
+|[[requirement_kubernetes]] <<requirement_kubernetes,kubernetes>> |>= 2
+|[[requirement_utils]] <<requirement_utils,utils>> |>= 1
 |===
 
 = Providers
@@ -85,8 +85,8 @@ No outputs.
 [cols="a,a",options="header,autowidth"]
 |===
 |Name |Version
-|[[provider_helm]] <<provider_helm,helm>> |~> 2
-|[[provider_utils]] <<provider_utils,utils>> |~> 1
+|[[provider_helm]] <<provider_helm,helm>> |>= 2
+|[[provider_utils]] <<provider_utils,utils>> |>= 1
 |===
 
 = Resources
