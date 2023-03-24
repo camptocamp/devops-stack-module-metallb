@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.0](https://github.com/camptocamp/devops-stack-module-metallb/compare/v1.0.0-alpha.2...v1.0.0) (2023-03-24)
+
+
+### Documentation
+
+* correct Antora structure and add PR template ([#5](https://github.com/camptocamp/devops-stack-module-metallb/issues/5)) ([9db0ea5](https://github.com/camptocamp/devops-stack-module-metallb/commit/9db0ea51c9ca1e31630503a30cdfe5e68b970991))
+
 ## [1.0.0-alpha.2](https://github.com/camptocamp/devops-stack-module-metallb/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2023-03-08)
 
 
