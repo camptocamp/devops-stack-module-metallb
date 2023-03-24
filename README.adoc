@@ -17,10 +17,6 @@ The following providers are used by this module:
 
 - [[provider_utils]] <<provider_utils,utils>> (>= 1)
 
-=== Modules
-
-No modules.
-
 === Resources
 
 The following resources are used by this module:
@@ -64,10 +60,6 @@ Description: Namespace to deploy metallb chart to.
 Type: `string`
 
 Default: `"metallb-system"`
-
-=== Outputs
-
-No outputs.
 // END_TF_DOCS
 // BEGIN_TF_TABLES
 = Requirements
