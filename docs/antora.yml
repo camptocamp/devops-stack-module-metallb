@@ -1,5 +1,5 @@
 ---
-name: "matallb"
+name: "metallb"
 title: "MetalLB Module"
 version: true
 start_page: README.adoc
