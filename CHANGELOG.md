@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/camptocamp/devops-stack-module-metallb/compare/v1.0.0...v1.0.1) (2023-03-29)
+
+
+### Documentation
+
+* fix typo in module name ([#7](https://github.com/camptocamp/devops-stack-module-metallb/issues/7)) ([831754a](https://github.com/camptocamp/devops-stack-module-metallb/commit/831754a31497a08a0bb61c96ea2c9c15075105ae))
+
 ## [1.0.0](https://github.com/camptocamp/devops-stack-module-metallb/compare/v1.0.0-alpha.2...v1.0.0) (2023-03-24)
 
 
