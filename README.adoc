@@ -39,6 +39,14 @@ Type: `string`
 
 The following input variables are optional (have default values):
 
+==== [[input_namespace]] <<input_namespace,namespace>>
+
+Description: Namespace to deploy metallb chart to.
+
+Type: `string`
+
+Default: `"metallb-system"`
+
 ==== [[input_helm_values]] <<input_helm_values,helm_values>>
 
 Description: Override values.
@@ -52,14 +60,6 @@ Default:
   {}
 ]
 ----
-
-==== [[input_namespace]] <<input_namespace,namespace>>
-
-Description: Namespace to deploy metallb chart to.
-
-Type: `string`
-
-Default: `"metallb-system"`
 // END_TF_DOCS
 // BEGIN_TF_TABLES
 = Requirements
@@ -96,6 +96,18 @@ Default: `"metallb-system"`
 [cols="a,a,a,a,a",options="header,autowidth"]
 |===
 |Name |Description |Type |Default |Required
+|[[input_namespace]] <<input_namespace,namespace>>
+|Namespace to deploy metallb chart to.
+|`string`
+|`"metallb-system"`
+|no
+
+|[[input_subnet]] <<input_subnet,subnet>>
+|Cluster docker network subnet.
+|`string`
+|n/a
+|yes
+
 |[[input_helm_values]] <<input_helm_values,helm_values>>
 |Override values.
 |`any`
@@ -109,18 +121,6 @@ Default: `"metallb-system"`
 ----
 
 |no
-
-|[[input_namespace]] <<input_namespace,namespace>>
-|Namespace to deploy metallb chart to.
-|`string`
-|`"metallb-system"`
-|no
-
-|[[input_subnet]] <<input_subnet,subnet>>
-|Cluster docker network subnet.
-|`string`
-|n/a
-|yes
 
 |===
 // END_TF_TABLES
