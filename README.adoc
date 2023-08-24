@@ -1,4 +1,4 @@
-:metallb-chart-version: 0.13.7
+:metallb-chart-version: 0.13.10
 
 // BEGIN_TF_DOCS
 === Requirements

@@ -316,6 +316,17 @@
                 },
                 "mlBindPort": {
                   "type": "integer"
+                },
+                "mlSecretKeyPath": {
+                  "type": "string"
+                }
+              }
+            },
+            "excludeInterfaces": {
+              "type": "object",
+              "properties": {
+                "enabled": {
+                  "type": "boolean"
                 }
               }
             },

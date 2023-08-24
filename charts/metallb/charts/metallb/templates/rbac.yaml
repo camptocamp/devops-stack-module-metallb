@@ -7,8 +7,11 @@ metadata:
     {{- include "metallb.labels" . | nindent 4 }}
 rules:
 - apiGroups: [""]
-  resources: ["services"]
+  resources: ["services", "namespaces"]
   verbs: ["get", "list", "watch"]
+- apiGroups: [""]
+  resources: ["nodes"]
+  verbs: ["list"]
 - apiGroups: [""]
   resources: ["services/status"]
   verbs: ["update"]
@@ -17,10 +20,19 @@ rules:
   verbs: ["create", "patch"]
 - apiGroups: ["admissionregistration.k8s.io"]
   resources: ["validatingwebhookconfigurations", "mutatingwebhookconfigurations"]
+  resourceNames: ["metallb-webhook-configuration"]
+  verbs: ["create", "delete", "get", "list", "patch", "update", "watch"]
+- apiGroups: ["admissionregistration.k8s.io"]
+  resources: ["validatingwebhookconfigurations", "mutatingwebhookconfigurations"]
+  verbs: ["list", "watch"]
+- apiGroups: ["apiextensions.k8s.io"]
+  resources: ["customresourcedefinitions"]
+  resourceNames: ["addresspools.metallb.io","bfdprofiles.metallb.io","bgpadvertisements.metallb.io",
+    "bgppeers.metallb.io","ipaddresspools.metallb.io","l2advertisements.metallb.io","communities.metallb.io"]
   verbs: ["create", "delete", "get", "list", "patch", "update", "watch"]
 - apiGroups: ["apiextensions.k8s.io"]
   resources: ["customresourcedefinitions"]
-  verbs: ["create", "delete", "get", "list", "patch", "update", "watch"]
+  verbs: ["list", "watch"]
 {{- if .Values.prometheus.secureMetricsPort }}
 - apiGroups: ["authentication.k8s.io"]
   resources: ["tokenreviews"]
@@ -38,7 +50,7 @@ metadata:
     {{- include "metallb.labels" . | nindent 4 }}
 rules:
 - apiGroups: [""]
-  resources: ["services", "endpoints", "nodes"]
+  resources: ["services", "endpoints", "nodes", "namespaces"]
   verbs: ["get", "list", "watch"]
 - apiGroups: ["discovery.k8s.io"]
   resources: ["endpointslices"]
@@ -66,6 +78,9 @@ rules:
   verbs: ["list"]
 - apiGroups: [""]
   resources: ["secrets"]
+  verbs: ["get", "list", "watch"]
+- apiGroups: [""]
+  resources: ["configmaps"]
   verbs: ["get", "list", "watch"]
 - apiGroups: ["metallb.io"]
   resources: ["addresspools"]
