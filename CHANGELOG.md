@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/camptocamp/devops-stack-module-metallb/compare/v1.4.0...v1.5.0) (2024-07-26)
+
+
+### Features
+
+* **chart:** patch update of dependencies on metallb chart ([#23](https://github.com/camptocamp/devops-stack-module-metallb/issues/23)) ([02b28ae](https://github.com/camptocamp/devops-stack-module-metallb/commit/02b28aeccef67da796e67527eb10d80429256d5b))
+
 ## [1.4.0](https://github.com/camptocamp/devops-stack-module-metallb/compare/v1.3.0...v1.4.0) (2024-06-28)
 
 
